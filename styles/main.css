@@ -136,7 +136,90 @@ main h1 {
     flex-direction: row;
     flex-wrap: wrap;
 }
+.combo-type-item-3 {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 70px;
+}
+.combo-type-item-3 > .combo-detail1,
+.combo-type-item-3 > .combo-detail2,
+.combo-type-item-3 > .combo-imgchung {
+    width:30%;
+}
+.combo-detail1 {
+    padding-left: 1rem;
 
+}
+.combo-detail2 {
+    padding-right: 1rem;
+
+}
+.combo-detail1 h3,
+.combo-detail2 h3 {
+    position: relative;
+    color: var(--color-red-bold);
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+.combo-detail1  > h3::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: darkred;
+    top: 50%;
+    left: 0;
+    transform: translateX(-42%);
+}
+.combo-detail2 > h3::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: darkred;
+    top: 50%;
+    transform: translateX(20%);
+}
+.combo-detail1 > h3 {
+    margin-top: 100%;
+    text-align: right;
+}
+.combo-detail1 p {
+    text-align: right;
+}
+.combo-detail1 span {
+    display: block;
+    text-align: right;
+}
+.combo-detail1 .btn-gr-oncombo {
+    justify-content: flex-end;
+}
+.combo-detail2 .btn-gr-oncombo {
+    justify-content: flex-star;
+}
+.combo-detail2 h3 {
+    margin-top: 20%;
+    
+}
+.combo-detail1 p,
+.combo-detail2 p {
+
+    font-family: 'MontserratLight';
+    font-size: 18px;
+   
+    margin: 16px 0;
+
+}
+.combo-detail1 span,
+.combo-detail2 span {
+    font-weight: bold;
+}
+.combo-type-item-3 > .combo-imgchung img {
+    width:100%;
+    height:auto;
+}
 .combo-type-item > div:nth-child(n) {
     width: 50%;
 }
@@ -146,13 +229,18 @@ main h1 {
 }
 
 .combo-img img {
-    width: auto;
-    height: 360px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     display: block;
+
+    padding: 64px;
+
 }
 .btn-gr-oncombo {
     display: flex;
+    margin: 1rem 0;
+    gap: 1rem;
 }
 .btn-gr-oncombo button {
     padding: 10px 20px;
@@ -160,17 +248,39 @@ main h1 {
     border-radius: 5px;
     background: transparent;
     color: var(--color-logo-grival);
+   
 }
-
+.combo-type-item:nth-child(n) .combo-detail::after {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+   
+    background: url('../public/partent/hoa.svg');
+    background-repeat: no-repeat;
+}
+.combo-detail {
+    padding:100px 50px;
+    position: relative;
+}
+.combo-type-item:nth-child(2) > .combo-detail::after {
+    width: 70%;
+    height: 70%;
+    transform: translate(-17%,20%) rotate(9deg) scaleX(-1.0);
+    opacity: 0.5;
+}
 .combo-detail h3{
     color: var(--color-red-bold);
-    font-size: 30px;
+    font-size: 36px;
     letter-spacing: 2px;
 }
 .combo-detail p {
 
     font-family: 'MontserratLight';
- 
+
+    font-size: 20px;
+    font-weight: bold;
+    margin: 16px 0;
 }
 .combo-detail span {
     font-weight: bold;

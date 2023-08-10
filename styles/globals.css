@@ -17,6 +17,7 @@
 :root {
   --color-logo-grival: #d92027;
   --color-red-bold : darkred;
+  --skin : #ffe9b8;
 }
 
 
@@ -39,6 +40,10 @@ p {
 }
 div,button {
   font-family: 'MontserratLight';
+  
+}
+button {
+  background: #ffe9b8 !important;
 }
 button,a {
   cursor: pointer;
@@ -80,4 +85,20 @@ background: linear-gradient(90deg, rgba(255,240,185,1) 0%, rgba(243,146,177,1) 1
 .bg02 {
   background: rgb(203,231,171);
 background: linear-gradient(90deg, rgba(203,231,171,1) 0%, rgba(245,244,179,1) 100%);
+}
+.bg-all {
+  background: rgb(248,179,182);
+background: linear-gradient(90deg, rgba(248,179,182,1) 0%, rgba(228,240,153,1) 50%, rgba(149,208,154,1) 100%);
+}
+.bg03 {
+  background: rgb(255,240,185);
+background: linear-gradient(90deg, rgba(243,146,177,1) 0%, rgba(255,240,185,1) 100%);
+}
+.bg04 {
+  background: rgb(255,248,185);
+background: linear-gradient(54deg, rgba(255,248,185,1) 10%, rgba(69,188,140,1) 58%);
+}
+.bg05 {
+  background: rgb(255,248,185);
+background: linear-gradient(218deg, rgba(255,248,185,1) 20%, rgba(243,137,177,1) 63%);
 }
