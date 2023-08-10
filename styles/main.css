@@ -1,0 +1,185 @@
+main {
+    width: 100vw;
+    height: fit-content;
+
+}
+
+
+main h1 {
+    font-size: 40px;
+    text-align: center;
+    background: radial-gradient(circle, rgba(255, 217, 0, 0.567) 0%, rgba(54, 46, 1, 0.911) 57%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-section {
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+}
+
+.banner-section img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    width: 100vw;
+    height: fit-content;
+    background: var(--color-logo-grival);
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer * {
+    color: whitesmoke !important;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../public/menu-pattern.png);
+    pointer-events: none;
+
+}
+
+
+.footer div:nth-child(n) {
+    width: 30%;
+
+    height: fit-content;
+    padding: 1rem;
+}
+
+.footer div:nth-child(n) h3 {
+    height: 50px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 100%;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.footer div:nth-child(n) h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 142px;
+    height: 3px;
+    background: whitesmoke;
+
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer-end-brand {
+    background: var(--color-logo-grival);
+    display: flex;
+}
+
+.footer-end-brand p {
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+@media (max-width:868px) {
+
+    .footer div:nth-child(n) {
+        width: 100% !important;
+    }
+}
+
+
+
+/* section combo */
+.combo-heading {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.combo-heading h2 {
+    color: var(--color-logo-grival);
+    font-size: 36px;
+    
+}
+
+.combo-type-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.combo-type-item > div:nth-child(n) {
+    width: 50%;
+}
+
+.combo-img {
+    overflow: hidden;
+}
+
+.combo-img img {
+    width: auto;
+    height: 360px;
+    margin: 0 auto;
+    display: block;
+}
+.btn-gr-oncombo {
+    display: flex;
+}
+.btn-gr-oncombo button {
+    padding: 10px 20px;
+    border: 1px solid var(--color-logo-grival);
+    border-radius: 5px;
+    background: transparent;
+    color: var(--color-logo-grival);
+}
+
+.combo-detail h3{
+    color: var(--color-red-bold);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.combo-detail p {
+
+    font-family: 'MontserratLight';
+ 
+}
+.combo-detail span {
+    font-weight: bold;
+}
+/* price section */
+.price-detail {
+    
+}
+.price-detail img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Swashington";
+  src: url("../pages/fonts/SVN-Swashington.otf");   
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MontserratLight";
+  src: url("../pages/fonts/Montserrat-Light.ttf");   
+  font-display: swap;
+}
+@font-face {
+  font-family: "BambinoLight";
+  src: url("../pages/fonts/Bambino-Light.ttf");   
+  font-display: swap;
+}
+:root {
+  --color-logo-grival: #d92027;
+  --color-red-bold : darkred;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+ overflow: hidden;
+}
+
+h1,h2,h3 {
+  font-family: "Swashington";
+}
+p {
+  font-family: 'MontserratLight';
+}
+div,button {
+  font-family: 'MontserratLight';
+}
+button,a {
+  cursor: pointer;
+}
+
+.widget {
+  position: fixed;
+  bottom:0;
+  right:0;
+  width: 200px;
+  height: 70px;
+}
+
+.scrolltotop {
+  background: var(--color-logo-grival);
+  width: 50px;
+  height: 50px;
+  color: whitesmoke;
+  font-size: 42px;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+.maxW {
+  max-width: 1368px;
+  margin:0 auto;
+  position: relative;
+}
+
+
+/* custom background */
+.bg01 {
+  background: rgb(255,240,185);
+background: linear-gradient(90deg, rgba(255,240,185,1) 0%, rgba(243,146,177,1) 100%);
+}
+.bg02 {
+  background: rgb(203,231,171);
+background: linear-gradient(90deg, rgba(203,231,171,1) 0%, rgba(245,244,179,1) 100%);
+}
