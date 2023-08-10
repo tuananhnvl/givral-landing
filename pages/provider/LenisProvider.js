@@ -3,7 +3,7 @@ import { useEffect, createContext, useRef, useState } from 'react'
 import Lenis from '@studio-freight/lenis'
 
 export const LenisContext = createContext({});
-export function LenisProvider({ children }) {
+export default function LenisProvider({ children }) {
     const ls = typeof window !== "undefined" ? window.localStorage : null;
     const [contextLenis, setContextLenis] = useState({})
 
