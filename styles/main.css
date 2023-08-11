@@ -293,3 +293,36 @@ main h1 {
     width: 100%;
     height: auto;
 }
+
+
+
+/* view price */
+.view-price {
+    width: 100%;
+    position: relative;
+    height: fit-content;
+}
+.view-display {
+    width: 100%;
+    height: 50vh;
+}
+.view-display img {
+    width: auto;
+    height: 100%;
+}
+
+
+/* gallery */
+.gallery {
+    width: 100%;
+    height: fit-content;
+}
+.gallery .row {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+.gallery .row  img {
+    width: 30%;
+}

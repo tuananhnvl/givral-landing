@@ -1,12 +1,21 @@
+"use client"
+import React,{useEffect,useRef} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Widget from '@/components/Widget.js'
 import Footer from '@/components/Footer.js'
 import ImageSliderBtn from '@/components/ImageSliderBtn.js'
 import SliderDrag from '@/components/SliderDrag.js'
-
+import SliderPrice from '@/components/SliderPrice'
+import Gallery from '@/components/Gallery'
 export default function Home() {
+  const neoRef = useRef(null)
+  useEffect(() => {
 
+    /* const rect = neoRef.current.getBoundingClientRect();
+
+console.log(rect); */
+  }, [neoRef]);
   return (
     <>
 
@@ -133,43 +142,21 @@ export default function Home() {
           <div className="combo-heading">
             <h2>BẢNG GIÁ BÁNH TRUNG THU GIVRAL 2023</h2>
             <p>Dưới đây là bảng giá bánh trung thu givral 2023, mời quý khách hàng tham khảo.</p>
-            <div className='btn-gr-onprice' >
+            <div className='btn-gr-oncombo ' >
               <button>Dowload File Bang Gia</button>
             </div>
           </div>
-          <div className='price-detail'>
-            <Image src={'/banggia-chietkhau/banh-le.png'} alt='' width={2678} height={1506} />
+          <div className='price-detail maxW'>
+            <SliderPrice/>
           </div>
         </section>
         <ImageSliderBtn />
-        <h1>Slider Example</h1>
-        <SliderDrag>
-          {/* Add your slider items */}
-          <div className="slider-item" draggable="false">Item 1</div>
-          <div className="slider-item" draggable="false">Item 2</div>
-          <div className="slider-item" draggable="false">Item 3</div>
-          <div className="slider-item" draggable="false">Item 3</div>
-          <div className="slider-item" draggable="false">Item 3</div>
-          <div className="slider-item" draggable="false">Item 3</div>
-
-          {/* ... */}
-        </SliderDrag>
-        <style jsx>
-          {`
-          .slider-item {
-            width: 300px; /* Adjust item width as needed */
-            height: 200px; /* Adjust item height as needed */
-            margin-right: 10px; /* Adjust margin between items */
-            background-color: lightgray;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-        `}
-        </style>
+        <h1 id="neo-1" ref={neoRef}>Slider Example</h1>
+        <Gallery/>
       </main>
 
       <SliderDrag />
+ 
       <Footer />
       <Widget />
 
